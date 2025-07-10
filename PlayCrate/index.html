@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2c3e50" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>PlayCrate Games</title>
+</head>
+<body>
+  <header>
+    <h1>🎲 PlayCrate Games</h1>
+    <nav>
+      <select id="game-selector">
+        <option value="farkle">Farkle</option>
+        <option value="yahtzee">Yahtzee</option>
+        <option value="liars-dice">Liar's Dice</option>
+        <option value="tens">Tens</option>
+        <option value="kings-corner">Kings Corner</option>
+        <option value="trash">Trash</option>
+        <option value="golf">Golf</option>
+      </select>
+    </nav>
+  </header>
+
+  <main>
+    <section id="instructions"></section>
+    <section id="scorecard">
+      <div id="score-entry">
+        <h2>Scorecard</h2>
+        <form id="score-form">
+          <input type="text" id="player-name" placeholder="Player Name" required />
+          <input type="number" id="player-score" placeholder="Score" required />
+          <button type="submit">Add Score</button>
+        </form>
+        <ul id="score-list"></ul>
+        <button id="clear-scores">Clear Scores</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
