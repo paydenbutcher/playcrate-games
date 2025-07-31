@@ -4,17 +4,62 @@
     <meta charset="UTF-8">
     <title>PlayCrate Games</title>
     <style>
-        body { font-family: sans-serif; font-size: 16px; padding: 20px; max-width: 800px; margin: auto; line-height: 1.6; }
-        h1 { text-align: center; }
-        h2 { color: #2c3e50; border-bottom: 1px solid #ccc; padding-bottom: 5px; margin-top: 40px; }
-        pre { white-space: pre-wrap; }
-        @media (max-width: 600px) {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
+    body {
+        font-family: sans-serif;
+        font-size: 16px;
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+        line-height: 1.6;
+    }
 
-    </style>
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 30px;
+    }
+
+    .header img {
+        height: 72px;
+        margin-right: 20px;
+    }
+
+    .header h1 {
+        margin: 0;
+        font-size: 2.5em;
+    }
+
+    h2 {
+        color: #2c3e50;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 5px;
+        margin-top: 40px;
+    }
+
+    pre {
+        white-space: pre-wrap;
+    }
+
+    @media (max-width: 600px) {
+        .header {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header img {
+            margin: 0 0 10px 0;
+            height: 60px;
+        }
+
+        .header h1 {
+            font-size: 2em;
+            text-align: center;
+        }
+    }
+</style>
+
 
 </head>
 <body>
